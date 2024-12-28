@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+       body {
+           margin: 0;
+           font-family: Arial, sans-serif;
+           background-color: #f0f0f0;
+       }
+
+       .container {
+           max-width: 100%;
+           margin: 0 auto;
+           padding: 10px;
+       }
+
+       .mahasiswa {
+           text-align: center;
+           color: white;
+           background-color: red;
+       }
+
+       .profile {
+           display: flex;
+           align-items: center;
+           background: white;
+           padding: 20px;
+           border-radius: 10px;
+           margin: 20px 0;
+       }
+
+       .profile-photo {
+           width: 150px;
+           height: 150px;
+           border-radius: 50%;
+           margin-right: 30px;
+           object-fit: cover;
+       }
+
+       .profile-info {
+           flex: 1;
+       }
+
+       .router-info {
+           flex: 1;
+           padding-right: 20px;
+       }
+
+       .router-image {
+           width: 200px;
+           height: 150px;
+           object-fit: cover;
+           border-radius: 5px;
+       }
+       .router-content {
+           background: white;
+           padding: 20px;
+           margin: 20px 0;
+           border-radius: 10px;
+           box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+       }
+
+       .router-image {
+           width: 80%;
+            width: 800px;
+           height: 600px;
+           object-fit: cover;
+           border-radius: 5px;
+           margin: 20px 0;
+       }
+
+       .router-types {
+           margin-top: 20px;
+       }
+
+       .router-type {
+           margin: 20px 0;
+           padding: 15px;
+           border-left: 3px solid #3498db;
+       }
+
+
+       h1 {
+           text-align: center;
+           background-color: red;
+           color: white;
+           margin: 40px 0;
+       }
+
+       h2 {
+           color: #2c3e50;
+           margin-bottom: 15px;
+       }
+
+       p {
+           color: #666;
+           line-height: 1.6;
+       }
+
+       footer {
+           text-align: center;
+           padding: 20px;
+           color: #666;
+           margin-top: 40px;
+       }
+       .resources {
+           margin-top: 40px;
+           padding: 20px;
+           background: white;
+           border-radius: 10px;
+       }
+
+       .resources h2 {
+           color: #2c3e50;
+           margin-bottom: 20px;
+       }
+
+       .article-links a {
+           display: block;
+           color: gray;
+           text-decoration: none;
+           padding: 10px;
+           margin: 10px 0;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+           transition: background-color 0.3s;
+       }
+
+       .article-links a:hover {
+           background-color: #f5f5f5;
+       }
+
+       .download-section {
+           margin-top: 20px;
+       }
+
+       .download-btn {
+           display: inline-block;
+           background-color: gray;
+           color: white;
+           padding: 10px 20px;
+           border-radius: 5px;
+           text-decoration: none;
+           margin: 10px 0;
+           transition: background-color 0.3s;
+       }
+
+       .download-btn:hover {
+           background-color: red;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <h1 class="mahasiswa">Profil Mahasiswa</h1>
+       <div class="profile">
+           <img src="WhatsApp Image 2024-12-26 at 21.05.57.jpeg" alt="Foto Profil" class="profile-photo">
+           <div class="profile-info">
+               <h2>Nama: Vikry Achmad Sonjaya Kusumah</h2>
+               <p>NIM: 607012400001</p>
+               <p>Kelas: 48-02</p>
+               <p>Matakuliah: Jaringan Komputer</p>
+           </div>
+       </div>
+
+       <div class="router-content">
+        <h1>Perangkat Jaringan Router</h1>
+        <img src="ftorouter.png" alt="Tipe-tipe Router" class="router-image">
+        
+        <div class="router-types">
+            <div class="router-type">
+                <h2>Pengertian Router</h2>
+                <p>router adalah perangkat yang berfungsi untuk mentransmisikan paket data dari jaringan internet ke perangkat lain melalui proses routing. Proses routing sendiri merupakan proses meneruskan paket jaringan satu dengan yang lainnya.
+                 router adalah perangkat yang menghubungkan dua atau lebih jaringan atau sub-jaringan.</p>
+            </div>
+            <div class="router-type">
+                <h2>Fungsi Router</h2>
+                <p>Router memiliki dua fungsi utama, yaitu mengelola lalu lintas antar jaringan dan membagikan koneksi internet ke beberapa perangkat lain.</p>
+            </div>
+            <h1>Jenis Jenis Router</h1>
+            <div class="router-type">
+                <h2>Router Kabel (Wired Router)</h2>
+                <p>Router ini menghubungkan perangkat ke internet menggunakan kabel Ethernet. Dengan kabel, koneksi internet cenderung lebih stabil dan cepat.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>Router Nirkabel (Wireless Router)</h2>
+                <p>Router ini memungkinkan perangkat terhubung ke internet tanpa kabel dengan menggunakan sinyal Wi-Fi.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>Router Inti (Core Router)</h2>
+                <p>Router ini digunakan dalam infrastruktur jaringan yang besar untuk mengarahkan data dengan sangat cepat dan efisien.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>Router Tepi (Edge Router)</h2>
+                <p>Router ini terletak di ujung jaringan dan berfungsi sebagai penghubung antara jaringan internal dan jaringan eksternal.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>SOHO Router</h2>
+                <p>Router ini dirancang untuk memenuhi kebutuhan jaringan di rumah atau kantor kecil.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>Enterprise Router</h2>
+                <p>Router ini digunakan oleh perusahaan besar untuk mengelola jaringan yang kompleks dan memiliki kapasitas tinggi.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>Router Seluler (Mobile Router)</h2>
+                <p>Router ini dapat mengakses internet melalui jaringan seluler dan berbagi koneksi tersebut dengan beberapa perangkat.</p>
+            </div>
+
+            <div class="router-type">
+                <h2>VPN Router</h2>
+                <p>Router ini dilengkapi dengan kemampuan VPN yang mengenkripsi lalu lintas data sehingga lebih aman.</p>
+            </div>
+        </div>
+    </div>
+    <div class="resources">
+        <h2>Sumber Artikel</h2>
+        <div class="article-links">
+            <a href="https://www.dewaweb.com/blog/apa-itu-router/#Apa_itu_Router">www.dewaweb.com</a>
+            <a href="https://ascentoptics.com/blog/id/types-of-routers/">ascentoptics.com</a>
+        </div>
+ 
+        <div class="download-section">
+            <h2>Lampiran File Tutorial</h2>
+            <p>File langkah-langkah membuat web hosting dapat diakses dibawah ini:</p>
+            <a href="router-types.pdf" class="download-btn">Download Router Guide (PDF)</a>
+        </div>
+    </div>
+ 
+    <footer>
+        <p>&copy; 2024 Informasi Router</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Website-me</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.body-login {
+    background: linear-gradient(135deg, red 0%, #5B86E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 68px;
+}
+.body-signup {
+    background: linear-gradient(135deg, #36D1DC 0%, #5B86E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.dini {
+    width: 900px;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.header-dini {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-dini img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.header-dini h1 {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 8px;
+    font-family: 'Chakra Petch', sans-serif;
+    align-items: center;
+}
+
+.header-dini h2 {
+    color: gray;
+    font-size: 28px;
+}
+
+.input-dini {
+    margin-bottom: 20px;
+}
+
+.input-dini label {
+    margin-bottom: 8px;
+    display: block;
+    color: gray;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field i {
+    position: absolute;
+    left: 15px;
+    top: 35%;
+    color: #666;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 0px 12px 45px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.input-field input:focus {
+    border-color: aqua;
+    outline: none;
+}
+.input-field input:focus + i {
+    color:red;
+}
+.dinii {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+.ceklis {
+    margin-top: 3px;
+    accent-color: aqua;
+}
+
+
+.button-dini {
+    width: 100%;
+    padding: 14px;
+    background: #004680;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-dini:hover {
+    background: aqua;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #004680;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    .header-dini h1 {
+        font-size: 25px;
+    }
+
+    .input-field input {
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+<body class="body-login">
+    <main class="dini">
+        <section class="header-dini">
+            <img src="WhatsApp Image 2024-12-26 at 21.05.57.jpeg" alt="">
+            <h1>Website-me</h1>
+        </section>
+        <form>
+            <section class="input-dini">
+                <label for="email">Masukkan Email</label>
+                <section class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+            </section>  
+            <section class="input-dini">
+                <label for="password">Masukkan Password</label>
+                <section class="input-field">
+                    <input type="password" placeholder="Password">
+                    <i class="fas fa-envelope"></i>
+                </section>
+            </section>
+            <section class="dinii">
+                <input type="checkbox" id="ceklis" class="ceklis">
+                <label for="ceklis">I agree to the Terms of Service and Privacy Policy</label>
+            </section>
+            <button type="submit" id="login" class="button-dini">Login</button>
+        </form>
+        <p class="login-link">Belum memiliki akun ? <a href="signIN.html">Sign up</a></p>
+    </main>
+    <script>
+    const loginButton = document.getElementById('login');
+    loginButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (confirm("Selamat datang di Website-me! Apakah Anda ingin melanjutkan?")) {
+            window.location.href = 'index.html';
+        }
+    });
+    </script>
+</body>
+</html>        
